@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Horimiya</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background-image: url("bg99.jpg");
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: rgb(255, 250, 242);
+  padding: 20px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffe2e0;
+}
+
+.nav-lists {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-lists .list a {
+  text-decoration: none;
+  color: #8f77b1;
+  font-size: 18px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search-box button {
+  background-color: #ffcbfe;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button i {
+  font-size: 16px;
+}
+
+/* ปรับให้ content อยู่ตรงกลางของหน้าจอ */
+.container {
+  height: 100vh;  /* ให้ container มีความสูงเต็มหน้าจอ */
+  display: flex;
+  justify-content: center;  /* จัดกลางแนวนอน */
+  align-items: center;  /* จัดกลางแนวตั้ง */
+  margin-top: 0;  /* ปรับ margin top ให้เป็น 0 */
+}
+
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.container img {
+  width: 25%;  /* ลดขนาดรูปภาพ */
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.container .text {
+  max-width: 600px;
+  background-color: rgba(251, 255, 233, 0.8);  /* สีพื้นหลังหลังข้อความ */
+  padding: 15px;  /* เพิ่มช่องว่างรอบๆ ข้อความ */
+  border-radius: 10px;  /* เพิ่มมุมโค้งให้กับพื้นหลัง */
+}
+
+.container .text h2 {
+  font-size: 24px;
+  color: #691968;
+  margin-bottom: 10px;
+}
+
+.container .text p {
+  font-size: 16px;
+  color: #333;  /* สีข้อความ */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <a href="page3.html">BACK</a>
+      </div>
+      <ul class="nav-lists">
+        <li class="list"><a href="page3.html">High School</a></li>
+        <li class="list"><a href="page4.html">Action</a></li>
+        <li class="list"><a href="page5.html">Romantic</a></li>
+        <li class="list"><a href="page6.html">Sports</a></li>
+        <li class="list"><a href="drama.html">Drama</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="search" name="cari" id="cari" placeholder="Search" />
+        <button type="submit" onclick="searchAnime()">
+          <i class="ri-search-line"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+  <div class="content">
+      <img src="hg2.jpg" alt="horimiya">
+      <div class="text">
+          <h2>Story</h2>
+          <p>โฮริ สาวมั่น ร่าเริง แจ่มใส สนิทกับเพื่อน แต่เบื้องหลังเป็นแม่บ้านแม่เรือน เลี้ยงดูน้องชาย กับ มิยามูระ หนุ่มแว่นดูเนิร์ด ไม่ค่อยพูดกับใคร แต่อีกนอกโรงเรียนจะถอดแว่น เจาะหู ดูเท่ วันหนึ่ง มิยามูระได้พาน้องชายของโฮริที่หกล้มไปส่งที่บ้าน ทำให้ทั้งสองได้เห็นความลับของอีกฝ่าย และเริ่มสนิทกันมากขึ้นหลังจากนั้น
+            โฮริ เคียวโกะ | Hori Kyouko สาวร่าเริง แจ่มใส เข้ากับเพื่อนได้ง่าย แต่ที่บ้านต้องเลี้ยงดูน้องชายและทำงานบ้านทุกอย่าง เป็นแม่บ้านเรือนที่ถนัดงานบ้านทุกอย่าง ดูแลน้องแทนพ่อแม่ที่ไม่ค่อยอยู่บ้าน เริ่มสนใจมิยามูระที่เข้ากับ โซตะ น้องชายตนได้ดี ได้พูดคุยกันมากขึ้น จนเริ่มคบกันในภายหลัง
+            มิยามูระ อิซึมิ | Miyamura Izumi หนุ่มที่ดูเนิร์ด หดหู่ ใส่แว่นตลอด แต่นอกโรงเรียนจะถอดแว่น หน้าตาดี ชอบสวมตุ้มหู (มี 4 รูที่หูสองข้างและเจาะปากอีก 1 รูป) และมีรอยสัก รวมถึงไม่ได้เป็นโอตาคุแบบที่คนอื่นเข้าใจ เข้ากับน้องชายของเคียวโกะได้ดี และชอบด้านน่ารักของเคียวโกะ ในอดีตมีปมที่เพื่อนมองเป็นตัวประหลาด ไม่ให้เข้ากลุ่ม ไม่ถูกกับเรื่องผี
+            สำหรับเราเรื่องนี้ให้คะแนน 10/10 ค่ะ แนะนำให้ดูเลยค่ะ</p>
+          </p>
+  </div>
+    <!-- เพิ่มปุ่มเล่นเพลง -->
+    <audio id="anime-song" controls>
+      <!-- ใช้ URL ของไฟล์เพลงหรือลิงค์เพลง -->
+      <source src="horimiya.mp4" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+  <script>
+    function searchAnime() {
+      const searchQuery = document.getElementById("cari").value;
+      if (searchQuery) {
+        alert("Searching for: " + searchQuery);
+        // Put your search logic here, for now it just shows the alert.
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ANIME FOR U</title>
+  <style>
+    .home-content {
+      padding-top: 55px;  
+    }
+    /* สไตล์ปุ่ม "FOR U" */
+    .for-u-button {
+      background-color: #fdc0ff;  /* สีพื้นหลัง */
+      color: white;  /* สีข้อความ */
+      padding: 10px 20px;  /* ขนาดของปุ่ม */
+      font-size: 16px;  /* ขนาดข้อความ */
+      border: none;  /* ไม่มีขอบ */
+      border-radius: 5px;  /* มุมโค้ง */
+      cursor: pointer;  /* เปลี่ยนเป็นมือเมื่อชี้ที่ปุ่ม */
+      transition: background-color 0.3s ease;  /* เปลี่ยนสีเมื่อชี้ปุ่ม */
+      margin-top: 10px;  /* เพิ่มช่องว่างระหว่างปุ่มกับเนื้อหาอื่น */
+    }
+
+    .for-u-button:hover {
+      background-color: #ff00bb;  /* เปลี่ยนสีเมื่อชี้ */
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="nav-logo">
+      <a href="login.html">LOGIN</a>
+    </div>
+    <ul class="nav-lists">
+      <li class="list"><a href="page3.html">High School</a></li>
+      <li class="list"><a href="page4.html">Action</a></li>
+      <li class="list"><a href="page5.html">Romantic</a></li>
+      <li class="list"><a href="page6.html">Sports</a></li>
+      <li class="list"><a href="drama.html">Drama</a></li>
+    </ul>
+    <div class="search-box">
+      <label for="cari"></label>
+      <input type="search" name="cari" id="cari" placeholder="Search" />
+      <button type="submit">
+        <i class="ri-search-line"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  <div class="home-container">
+    <div class="home-content">
+      <!-- เครื่องเล่นเพลง -->
+      <audio id="anime-song" controls>
+        <source src="C:\67020454\แนะนำอนิเมะ\スパークル [original ver.] -Your name. Music Video edition- 予告編 from new album「人間.mp4" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <!-- ปุ่ม FOR U -->
+      <button class="for-u-button" onclick="redirectToForU()">FOR U</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // ฟังก์ชันที่ใช้เปลี่ยนหน้าไปยังอีกหน้าเมื่อกดปุ่ม "FOR U"
+  function redirectToForU() {
+    window.location.href = "page2.html";  // เปลี่ยน URL ตามที่คุณต้องการ
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tsurune</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  background-image: url("bg99.jpg");
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: rgb(255, 250, 242);
+  padding: 20px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffe2e0;
+}
+
+.nav-lists {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-lists .list a {
+  text-decoration: none;
+  color: #8f77b1;
+  font-size: 18px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search-box button {
+  background-color: #ffcbfe;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button i {
+  font-size: 16px;
+}
+
+/* ปรับให้ content อยู่ตรงกลางของหน้าจอ */
+.container {
+  height: 100vh;  /* ให้ container มีความสูงเต็มหน้าจอ */
+  display: flex;
+  justify-content: center;  /* จัดกลางแนวนอน */
+  align-items: center;  /* จัดกลางแนวตั้ง */
+  margin-top: 0;  /* ปรับ margin top ให้เป็น 0 */
+}
+
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.container img {
+  width: 25%;  /* ลดขนาดรูปภาพ */
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.container .text {
+  max-width: 600px;
+  background-color: rgba(251, 255, 233, 0.8);  /* สีพื้นหลังหลังข้อความ */
+  padding: 15px;  /* เพิ่มช่องว่างรอบๆ ข้อความ */
+  border-radius: 10px;  /* เพิ่มมุมโค้งให้กับพื้นหลัง */
+}
+
+.container .text h2 {
+  font-size: 24px;
+  color: #691968;
+  margin-bottom: 10px;
+}
+
+.container .text p {
+  font-size: 16px;
+  color: #333;  /* สีข้อความ */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <a href="page6.html">BACK</a>
+      </div>
+      <ul class="nav-lists">
+        <li class="list"><a href="page3.html">High School</a></li>
+        <li class="list"><a href="page4.html">Action</a></li>
+        <li class="list"><a href="page5.html">Romantic</a></li>
+        <li class="list"><a href="page6.html">Sports</a></li>
+        <li class="list"><a href="drama.html">Drama</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="search" name="cari" id="cari" placeholder="Search" />
+        <button type="submit" onclick="searchAnime()">
+          <i class="ri-search-line"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+  <div class="content">
+      <img src="sp5.jpg" alt="Tsurune">
+      <div class="text">
+          <h2>Story</h2>
+          <p>ซีรีส์อนิเมะโทรทัศน์ดัดแปลง ผลิตโดยเกียวโตแอนิเมชัน ออกอากาศตั้งแต่เดือนตุลาคม พ.ศ. 2561 ถึงมกราคม พ.ศ. 2562 ภาพยนตร์อนิเมะชื่อเรื่องว่า สึรุเนะ -ธนูดอกแรกแห่งการเริ่มต้น- ออกฉายในเดือนสิงหาคม พ.ศ. 2565 ฤดูกาลที่สองชื่อเรื่องว่า สึรุเนะ -ธนูดอกแรกแห่งการร้อยเรียง- ออกอากาศตั้งแต่เดือนมกราคมถึงมีนาคม พ.ศ. 2566
+
+            นารูมิยะ มินาโตะ พ่ายแพ้ในการแข่งขันของชมรมยิงธนูครั้งสุดท้ายของชั้นมัธยมศึกษาตอนต้นด้วย "เรื่องเรื่องหนึ่ง" จึงตัดสินใจเลิกเล่นกีฬายิงธนูไป แต่แล้ววันหนึ่งหลังจากเข้าศึกษาต่อในระดับมัธยมศึกษาตอนปลายที่โรงเรียนคาเซไมได้ไม่นาน มินาโตะก็ได้พบและรู้จักกับ ทากิงาวะ มาซากิ นักยิงธนูผู้เปี่ยมไปด้วยความสามารถในอาคารยิงธนูยาตะโนะโมริ เหตุการณ์นี้ได้กลายเป็นแรงกระตุ้นให้มินาโตะหันกลับมายิงธนูอีกครั้งกระทั่งตัดสินใจเข้าชมรมยิงธนูของโรงเรียนคาเซไม โดยมีเป้าหมายที่จะเอาชนะ "เรื่องดังกล่าว" และฝ่าฝันเพื่อคว้าชัยชนะในการแข่งขันยิงธนูระดับจังหวัด
+          </p>
+  </div>
+    <!-- เพิ่มปุ่มเล่นเพลง -->
+    <audio id="anime-song" controls>
+      <!-- ใช้ URL ของไฟล์เพลงหรือลิงค์เพลง -->
+      <source src="My Happy Marriage.mp4" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+  <script>
+    function searchAnime() {
+      const searchQuery = document.getElementById("cari").value;
+      if (searchQuery) {
+        alert("Searching for: " + searchQuery);
+        // Put your search logic here, for now it just shows the alert.
+      }
+    }
+  </script>
+</body>
+</html>

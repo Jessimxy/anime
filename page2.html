@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope you enjoy</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        /* เปลี่ยนสีพื้นหลังของทั้งหน้า */
+        body {
+            background-color: rgb(209, 227, 242);
+            font-family: Arial, sans-serif;  /* ใช้ฟอนต์ที่สวยงาม */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* สไตล์สำหรับ container */
+        .audio-container {
+            display: flex;
+            justify-content: center; /* จัดตำแหน่งในแนวนอน */
+            align-items: center; /* จัดตำแหน่งในแนวตั้ง */
+            height: 80vh; /* ใช้ความสูง 80% ของหน้าจอ */
+            text-align: center;
+            flex-direction: column; /* ให้เนื้อหาของ .audio-container อยู่ในแนวตั้ง */
+        }
+
+        /* สไตล์ปุ่มกลับไปหน้าเดิม */
+        .back-button {
+            background-color: #f19bee;  /* สีพื้นหลัง */
+            color: rgb(34, 29, 29);  /* สีข้อความ */
+            padding: 15px 32px;  /* ขนาดของปุ่ม */
+            text-align: center;
+            font-size: 16px;
+            border: none;  /* ไม่มีขอบ */
+            border-radius: 5px;  /* มุมโค้ง */
+            cursor: pointer;  /* เปลี่ยนเป็นมือเมื่อชี้ที่ปุ่ม */
+            transition: background-color 0.3s ease;  /* เปลี่ยนสีเมื่อชี้ปุ่ม */
+            margin-top: 20px;  /* ช่องว่างระหว่างปุ่มกับเนื้อหาอื่น */
+        }
+
+        .back-button:hover {
+            background-color: #a04580;  /* เปลี่ยนสีเมื่อชี้ */
+        }
+
+        /* สไตล์สำหรับหัวใจ */
+        .heart {
+            font-size: 50px;
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- หัวใจอยู่ด้านบน -->
+    <div class="heart">
+        &#10084;  <!-- รหัส HTML สำหรับสัญลักษณ์หัวใจ -->
+    </div>
+
+    <!-- เนื้อหาหลัก -->
+    <div class="audio-container">
+        <h1>Hope you enjoy With MY List ANIME</h1>
+
+        <!-- แท็ก audio สำหรับการเล่นเพลง -->
+        <audio id="myAudio" controls>
+            <source src="スパークル [original ver.] -Your name. Music Video edition- 予告編 from new album「人間.mp4" type="audio/mp3"> <!-- ใส่ลิงก์ไฟล์เพลงของคุณที่นี่ -->
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- ปุ่มกลับไปหน้าเดิม -->
+        <button class="back-button" onclick="goBack()">กลับไปหน้าเดิม</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // ฟังก์ชัน JavaScript เพื่อกลับไปหน้าก่อนหน้า
+        function goBack() {
+            window.history.back();  // ใช้ history.back() เพื่อย้อนกลับไปหน้าก่อนหน้า
+        }
+    </script>
+
+</body>
+</html>
